@@ -14,10 +14,10 @@ const searchWikiEntitiesByLabel = async (endpoint, label, lang, limit) => {
       action: "wbsearchentities",
       search: label,
       format: "json",
-      language: lang,  // formato "it", "en", "fr"
-      uselang: lang,  // formato "it", "en", "fr"
+      language: lang,
+      uselang: lang,
       type: "item",
-      limit: limit,  // numero di risultati
+      limit: limit,
       origin: "*"
   });
 
