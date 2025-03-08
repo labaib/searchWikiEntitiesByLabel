@@ -34,7 +34,7 @@ import { searchWikiEntitiesByLabel } from './js/searchWikiEntitiesByLabel.js';
  import { searchWikiEntitiesByLabel } from 'https://cdn.jsdelivr.net/gh/labaib/searchWikiEntitiesByLabel@main/index.js';
 
  (async () => {
-     const token = await searchWikiEntitiesByLabel("www.wikidata.org");
+     const entities = await searchWikiEntitiesByLabel("www.wikidata.org", "Dante Alighieri", "it", 10);
  })();
 
 </script>
@@ -45,7 +45,7 @@ import { searchWikiEntitiesByLabel } from './js/searchWikiEntitiesByLabel.js';
   import { searchWikiEntitiesByLabel } from './js/searchWikiEntitiesByLabel.js';
 
   (async () => {
-    const token = await searchWikiEntitiesByLabel("www.wikidata.org");
+    const entities = await searchWikiEntitiesByLabel("www.wikidata.org", "Dante Alighieri", "it", 10);
   })();
 
 </script>
