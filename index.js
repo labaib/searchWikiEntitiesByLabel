@@ -22,7 +22,7 @@ const searchWikiEntitiesByLabel = async (endpoint, label, lang, limit) => {
   });
 
   const url = `https://${endpoint}/w/api.php?${params.toString()}`;
-  const response = await fetch(url, { credentials: "include" });
+  const response = await fetch(url);
   const json = await response.json();
   const data = json.search
         
