@@ -4,7 +4,7 @@
 * @param {string} label - Stringa da ricercare
 * @param {string} lang - ISO Lingua ["it", "en", "fr"]
 * @param {number} limit - Limite massimo risultati
-* @returns {Array<{id: string, title: string, pageId: number, concepturi: string, repository: string, url: string, display: Object, label: string, description: string, match: Object, aliases?: Array}|[]>} - Ritorna un array di oggetti 
+* @returns {Array<{id: string, title: string, pageId: number, concepturi: string, repository: string, url: string, display: Object, label: string, description: string, match: Object, aliases?: Array>}|[]} - Ritorna un array di oggetti 
 */
 
 const searchWikiEntitiesByLabel = async (endpoint, label, lang, limit) => {
