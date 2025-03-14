@@ -1,13 +1,13 @@
 /**
 * Ottieni match Wikidata partendo da un'etichetta
-* @param {string} endpoint - Istanza wiki ["www.wikidata.org"]
 * @param {string} label - Stringa da ricercare
 * @param {string} lang - ISO Lingua ["it", "en", "fr"]
 * @param {number} limit - Limite massimo risultati
+* @param {string} [endpoint="www.wikidata.org"] - opzionale
 * @returns {Array<{id: string, title: string, pageId: number, concepturi: string, repository: string, url: string, display: Object, label: string, description: string, match: Object, aliases?: Array>}|[]} - Ritorna un array di oggetti 
 */
 
-const searchWikiEntitiesByLabel = async (endpoint, label, lang, limit) => {
+const searchWikiEntitiesByLabel = async (label, lang, limit, endpoint = "www.wikidata.org") => {
 
   // Parametri URL
   const params = new URLSearchParams({
